@@ -1,0 +1,41 @@
+.flex {
+  display: flex;
+}
+
+.flex.inline {
+  display: inline-flex;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex.center {
+  justify-content: center;
+}
+
+.flex.middle {
+  align-items: center;
+}
+
+.flex > .full {
+  flex-grow: 1;
+  min-width: auto !important;
+  width: auto !important;
+}
+
+.flex.grid > div {
+  flex: 1;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex label {
+  flex-shrink: 0;
+}
