@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "le5le-ui": {
+    "cc-ui": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/le5le-ui",
+            "outputPath": "dist/cc-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -49,19 +49,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "le5le-ui:build",
+            "browserTarget": "cc-ui:build",
             "port": 6001
           },
           "configurations": {
             "production": {
-              "browserTarget": "le5le-ui:build:production"
+              "browserTarget": "cc-ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "le5le-ui:build"
+            "browserTarget": "cc-ui:build"
           }
         },
         "test": {
@@ -85,7 +85,7 @@
         }
       }
     },
-    "le5le-ui-e2e": {
+    "cc-ui-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -93,7 +93,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "le5le-ui:serve"
+            "devServerTarget": "cc-ui:serve"
           }
         },
         "lint": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "le5le-ui"
+  "defaultProject": "cc-ui"
 }
